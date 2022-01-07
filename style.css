@@ -1,4 +1,67 @@
-:root {
-  background-color: red;
-  border: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #dcdcdc;
+  font-size: 1.2em;
+}
+
+li {
+  list-style: none;
+  padding: 1em;
+}
+
+h1,
+h4,
+h6 {
+  margin-left: 0.5em;
+  padding: 1em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  height: 100vh;
+  margin: 30px;
+}
+.reviews {
+  background-color: #c0c0c0;
+}
+.averageRatings {
+  background-color: #c0c0c0;
+}
+
+.sidebar {
+  background-color: #c0c0c0;
+  grid-row: 1 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.websiteVisitors {
+  display: flex;
+  background-color: #c0c0c0;
+  align-items: center;
+  justify-content: center;
+  grid-row: 2 / 4;
+  grid-column: 2 / 5;
+}
+
+.in-div-web-vis {
+  display: flex;
+  height: 300px;
+  width: 600px;
+  background-color: #696969;
+}
+
+.sentimentAnalysis {
+  background-color: #c0c0c0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

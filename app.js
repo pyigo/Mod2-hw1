@@ -3,8 +3,8 @@
 class Sidebar extends React.Component {
     render() {
         return (
-            <div>
-                <h6>Dashborad</h6>
+            <div class='sidebar'>
+                <h6>Dashboard</h6>
                 <h6>Widget</h6>
                 <h6>Reviews</h6>
                 <h6>Customers</h6>
@@ -19,7 +19,7 @@ class Sidebar extends React.Component {
 class Reviews extends React.Component {
     render() {
         return (
-            <div>
+            <div class='reviews'>
                 <h6>Reviews</h6>
                 <h4>1,281</h4>
             </div>
@@ -31,7 +31,7 @@ class Reviews extends React.Component {
 class AverageRatings extends React.Component {
     render() {
         return (
-            <div>
+            <div class='averageRatings'>
                 <h6>Average Ratings</h6>
                 <h4>4.6</h4>
 
@@ -44,7 +44,7 @@ class AverageRatings extends React.Component {
 class SentimentAnalysis extends React.Component {
     render() {
         return (
-            <div>
+            <div class='sentimentAnalysis'>
                 <h6>Sentiment Analysis</h6>
                 <h4>960</h4>
                 <h4>122</h4>
@@ -58,9 +58,11 @@ class SentimentAnalysis extends React.Component {
 class WebsiteVisitors extends React.Component {
     render() {
         return (
-            <div>
-                <h6>Website V</h6>
-                <h4>821</h4>
+            <div class='websiteVisitors'>
+                <div class='in-div-web-vis'>
+                    <h6>Website Visitors</h6>
+                    <h4>821</h4>
+                </div>
             </div>
         )
     }
@@ -70,7 +72,6 @@ class App extends React.Component {
     render() {
         return (
             <div class="container">
-                <App />
                 <Sidebar />
                 <Reviews />
                 <AverageRatings />
